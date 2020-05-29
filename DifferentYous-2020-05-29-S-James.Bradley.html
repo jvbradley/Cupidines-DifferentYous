@@ -106,22 +106,26 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
   display: block;
   margin-left: auto;
   margin-right: auto;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Villager" tags="" position="25,175" size="100,100">&lt;&lt;set $characterAge to random(13,17)&gt;&gt;
+}
+
+.dialogLinkText {
+  color: green;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Villager" tags="" position="26,174" size="100,100">&lt;&lt;set $characterAge to random(13,17)&gt;&gt;
 &lt;img src = &#39;https://i.pinimg.com/236x/7b/a5/fe/7ba5fe79e97a8059a91220a53ed9c6a6--profile-pics-johannes-vermeer.jpg&#39; alt = &#39;Painting of a Young Woman&#39;&gt;
 
-You are $characterAge years old.  That is the age to go fight the &lt;&lt;link &#39;zombies&#39;&gt;&gt;
+You are $characterAge years old.  That is the age to go fight the &lt;&lt;link @@.dialogLinkText;zombies@@&gt;&gt;
   &lt;&lt;script&gt;&gt;
     Dialog.setup(&quot;The Walking Undead&quot;);
     Dialog.wiki(&quot;A zombie (zämbē) is a reanimated corpse.  It is caused by a virus that rewires the human brain while alive, eventually killing the host.  If a zombie bites you or their blood enters your boody, you have approximately three days (give or take) before you die and re-animate.  The strength of your immune system determines how quickly you succumb and die.&quot;);
     Dialog.open();
   &lt;&lt;/script&gt;&gt;
-&lt;&lt;/link&gt;&gt; that are attacking your country.  Your &lt;&lt;link &#39;friends&#39;&gt;&gt;
+&lt;&lt;/link&gt;&gt; that are attacking your country.  Your &lt;&lt;link @@.dialogLinkText;friends@@&gt;&gt;
   &lt;&lt;script&gt;&gt;
     Dialog.setup(&quot;Who are the people in your neighborhood?&quot;);
     Dialog.wiki(&quot;Your friends, Rune and her brother Ulf, have grown up in your village with you.  Nobody really keeps a calendar, but you are all approximately the same age of $characterAge years old.&quot;);
     Dialog.open();
   &lt;&lt;/script&gt;&gt;
-&lt;&lt;/link&gt;&gt; are also of age to fight this &lt;&lt;link &#39;war&#39;&gt;&gt;
+&lt;&lt;/link&gt;&gt; are also of age to fight this &lt;&lt;link @@.dialogLinkText;war@@&gt;&gt;
 	&lt;&lt;script&gt;&gt;
 		Dialog.setup(&quot;News from the war front!&quot;)
 		Dialog.wiki(&quot;Our nation is Arne, the Land of Many Eagles.  Our neighbors are the Bjørn.  They hail from the Land of BearClaws.  They have been trying to destory our land for many years.  Your nations&#39; diplomats blame each other for the failed trade treaty negociation.  The Bjørn now attack us and plague our land with zombies.&quot;);
