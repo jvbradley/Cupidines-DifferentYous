@@ -101,19 +101,19 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
 	<tw-storydata name="Different You&#39;s" startnode="20" creator="Twine" creator-version="2.3.8" ifid="0DD571BA-3161-45E6-BB88-BF948C631301" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">img {
-  width: 30%;
-  height: 30%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .dialogLinkText {
   color: green;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Villager" tags="" position="26,174" size="100,100">&lt;&lt;set $characterAge to random(13,17)&gt;&gt;
-&lt;img src = &#39;https://i.pinimg.com/236x/7b/a5/fe/7ba5fe79e97a8059a91220a53ed9c6a6--profile-pics-johannes-vermeer.jpg&#39; alt = &#39;Painting of a Young Woman&#39;&gt;
+}
 
-You are $characterAge years old.  That is the age to go fight the &lt;&lt;link @@.dialogLinkText;zombies@@&gt;&gt;
+.dialogBoxText {
+  text-align: center;
+  vertical-align: middle;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Villager" tags="" position="27,174" size="100,100">You are 14 years old.  That is the age to go fight the &lt;&lt;link @@.dialogLinkText;zombies@@&gt;&gt;
   &lt;&lt;script&gt;&gt;
     Dialog.setup(&quot;The Walking Undead&quot;);
     Dialog.wiki(&quot;A zombie (zämbē) is a reanimated corpse.  It is caused by a virus that rewires the human brain while alive, eventually killing the host.  If a zombie bites you or their blood enters your boody, you have approximately three days (give or take) before you die and re-animate.  The strength of your immune system determines how quickly you succumb and die.&quot;);
@@ -121,13 +121,15 @@ You are $characterAge years old.  That is the age to go fight the &lt;&lt;link @
   &lt;&lt;/script&gt;&gt;
 &lt;&lt;/link&gt;&gt; that are attacking your country.  Your &lt;&lt;link @@.dialogLinkText;friends@@&gt;&gt;
   &lt;&lt;script&gt;&gt;
-    Dialog.setup(&quot;Who are the people in your neighborhood?&quot;);
-    Dialog.wiki(&quot;Your friends, Rune and her brother Ulf, have grown up in your village with you.  Nobody really keeps a calendar, but you are all approximately the same age of $characterAge years old.&quot;);
+	var $htmlCode = &#39;&lt;p class = &quot;dialogBoxText&quot;&gt;Your friends, Rune and Ulf, have grown up in your village with you.&lt;br&gt;Nobody really keeps a calendar, but you are all approximately the same age of 14 years old.&lt;br&gt;&#39;
+	var $htmlCode = $htmlCode + &#39;&lt;img src=&quot;https://i.postimg.cc/HW0h6jrr/bg-Rune-Ulf.png&quot;&gt;&lt;/p&gt;&#39;
+    Dialog.setup(&quot;Rune &amp; Ulf&quot;);
+    Dialog.wiki($htmlCode)
     Dialog.open();
   &lt;&lt;/script&gt;&gt;
 &lt;&lt;/link&gt;&gt; are also of age to fight this &lt;&lt;link @@.dialogLinkText;war@@&gt;&gt;
 	&lt;&lt;script&gt;&gt;
-		Dialog.setup(&quot;News from the war front!&quot;)
+		Dialog.setup(&quot;To war!&quot;)
 		Dialog.wiki(&quot;Our nation is Arne, the Land of Many Eagles.  Our neighbors are the Bjørn.  They hail from the Land of BearClaws.  They have been trying to destory our land for many years.  Your nations&#39; diplomats blame each other for the failed trade treaty negociation.  The Bjørn now attack us and plague our land with zombies.&quot;);
 		Dialog.open();
 	&lt;&lt;/script&gt;&gt;
@@ -177,7 +179,8 @@ There are two different perspectives that one may experience:
 
 - You are a [[Viking]] named Ragnar the Headbonker.
 - You are a [[villager|Villager]].
- </tw-passagedata><tw-passagedata pid="21" name="Viking" tags="" position="300,38" size="100,100">You closed the bar on last night&#39;s kegger party.  Gradually awakening, you realize that your raiding party has left the camp without you.  You quickly suit up your armor and weapons, gulp down some hair of the dog, and [[quickly catch up with your group|VikingJoinsGroup]].
+
+</tw-passagedata><tw-passagedata pid="21" name="Viking" tags="" position="300,38" size="100,100">You closed the bar on last night&#39;s kegger party.  Gradually awakening, you realize that your raiding party has left the camp without you.  You quickly suit up your armor and weapons, gulp down some hair of the dog, and [[quickly catch up with your group|VikingJoinsGroup]].
 
 &lt;img src = &#39;https://i.postimg.cc/zXpKN6PJ/sw-ord-1557814-640.jpg&#39;&gt;</tw-passagedata><tw-passagedata pid="22" name="VikingJoinsGroup" tags="" position="601,23" size="100,100">&lt;&lt;set $randomOption to either(0,1)&gt;&gt;
 &lt;&lt;if $randomOption == 0&gt;&gt;
