@@ -1,0 +1,19 @@
+ - Good story to start.  Clickable dialog didn't make any sense for purpose.
+ -- Addressed.
+ - Adding the dialog to the existing text was handy, but it can cause you to lose your place where you're reading.
+ -- Addressed.
+ - Players don't have any sense of what to expect when navigating.  You may want to set different colors for text-expanding link and links to new panels.
+ -- Addressed.
+
+Keiro:
+ - Add attack bonuses to enemies.
+
+Charda:
+ - Suggested limiting character age to 14.
+ - Provided images via Discord.
+ - Set Viking as first option.
+
+Jim:
+ - Demonstrated initial working version.
+ - I will build mechanics and panels to follow the spirit of the story as closely as intended.
+ - I will be working on this over the weekend with a rough working copy available and posted in Discord by 8 A.M. PST on Monday.
