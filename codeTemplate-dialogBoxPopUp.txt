@@ -1,0 +1,7 @@
+blah blah blah <<link @@.dialogLinkText;TextOfLink@@>>
+  <<script>>
+    Dialog.setup("This Text in the Title");
+    Dialog.wiki("This text is in the box.");
+    Dialog.open();
+  <</script>>
+<</link>> bleh bleh bleh
