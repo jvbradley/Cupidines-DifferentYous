@@ -1,3 +1,30 @@
+02 June 2020:
+ - Options on first page: First: You are Ulf, the Villager. / Second option: You are Liv, the Viking.
+ -- Addressed.
+ -- Also added dialog boxes with images from Charda for both Ulf and Liv.
+ - Move images to left of text.
+ -- Addressed.
+ -- Also created a one-pixel white border to help distinguish picture from background.
+ - Adjust link text color of dialog boxes - green is difficult to see.
+ -- Adjusted text, dialog link text, and action text to be more easily distinguishable from each other.
+
+ - Ulf is the villager.  Is getting killed.  Rune and Liv are syblings.
+ - Either Rune or Liv end up killing Ulf.
+ -- Correcting text.
+
+ - Viking watch sneak away: What if he doesn't get a drink or see the old man?
+ -- Drink issue addressed.
+ -- Removed option to turn in early from the ceremony if feeling scared.  Feeling scared only ensures that the villager (Ulf) will not see the old man.
+ - Viking (Liv): Her story will also need to have the option to make the pact with Ulf (the villager) and friend.
+
+ - Crazy Old Man text: It feels like a lot.  Make it bite-size chunks.
+ -- Unable to address: Parsing single/double quotes to pass between variables inside a pop-up dialog box seems to confuse the browser on what it's actually supposed to be doing.  I adjusted the paragraph sizes a bit.
+ - Death text: It feels like a lot.  Make it bite-size chunks.
+
+
+
+=====
+
  - Good story to start.  Clickable dialog didn't make any sense for purpose.
  -- Addressed.
  - Adding the dialog to the existing text was handy, but it can cause you to lose your place where you're reading.
